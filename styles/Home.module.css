@@ -82,10 +82,16 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 380px) and (max-width: 900px) {
+@media screen and (min-width: 319px) and (max-width: 767px) {
   .grid {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
